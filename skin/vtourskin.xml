@@ -255,15 +255,15 @@
 	<style name="skin_thumbtext_style" type="text" align="bottom" width="100%" y="5" enabled="false" bg="false" bgborder="false" css="calc:skin_settings.design_text_css + ' text-align:center; font-size:10px;'" textshadow="get:skin_settings.design_text_shadow" />
 
 	<!-- skin_hotspotstyle - style for the hotspots -->
-	<style name="skin_hotspotstyle" url="vtourskin_hotspot.png" edge="top" distorted="true"
+	<style name="skin_hotspotstyle" url="vtourskin_hotspot_v2.svg" edge="bottom" distorted="true" blendmode="add"
 	       tooltip=""
 	       linkedscene=""
 	       linkedscene_lookat=""
 	       onclick="skin_hotspotstyle_click();"
 	       depth="1000"
-	       scale="0.5"
-	       onover.addevent="tween(scale,0.55);"
-	       onout.addevent="tween(scale,0.5);"
+	       scale="0.1"
+	       onover.addevent="tween(scale,0.15);"
+	       onout.addevent="tween(scale,0.1);"
 	       onloaded.addevent="skin_hotspotstyle_setup();"
 	       />
 
@@ -1167,10 +1167,10 @@
 	
 	<!-- autotour/autoplay support -->
 	<autorotate enabled="calc:skin_settings.autotour == true"
-	            waittime="5.0"
+	            waittime="1.0"
 	            accel="0.7"
-	            speed="4.0"
-	            tofov="80"
+	            speed="1.0"
+	            tofov=""
 	            oneroundrange="360"
 	            />
 	
