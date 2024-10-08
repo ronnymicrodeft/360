@@ -1194,7 +1194,7 @@
 
 
 	<!-- context menu - https://krpano.com/docu/xml/#contextmenu -->
-	<contextmenu>
+	<contextmenu versioninfo="false">
 		<item name="kr" caption="KRPANO"     />
 		<item name="fs" caption="FULLSCREEN" />
 		<item name="cc" caption="Change Controlmode" onclick="skin_changecontrolmode();"  separator="above" />
@@ -1206,6 +1206,7 @@
 		<item name="lp" caption="Little Planet View" onclick="skin_view_littleplanet();"  showif="view.vlookatrange == 180" devices="flash|webgl" />
 		<item name="sa" caption="Start Autotour"     onclick="autorotate.start();" separator="both" showif="autorotate.isrotating == false" visible="calc:skin_settings.autotour == true" />
 		<item name="ta" caption="Stop Autotour"      onclick="autorotate.stop();"  separator="both" showif="autorotate.isrotating == true"  visible="calc:skin_settings.autotour == true" />
+		<item name="dm" caption="© Digital Microdeft" onclick="openurl(https://www.digitalmicrodeft.com/)" />
 	</contextmenu>
 
 
